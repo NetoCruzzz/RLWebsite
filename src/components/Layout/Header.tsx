@@ -1,4 +1,3 @@
-import { Rocket } from 'lucide-react';
 import { useState } from 'react';
 
 interface HeaderProps {
@@ -23,8 +22,8 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center cursor-pointer" onClick={() => onNavigate('home')}>
-            <Rocket className="h-8 w-8 text-blue-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Rocket Club</span>
+            <img src="/images/ThicRLNobackground.png" alt="The Rocket Launchers Logo" className="h-12 w-12 object-contain" />
+            <span className="ml-0 text-xl font-bold text-gray-900">The Rocket Launchers</span>
           </div>
 
           <div className="hidden md:flex space-x-8">
