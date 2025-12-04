@@ -17,11 +17,11 @@ export default function Projects() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div className="min-h-screen bg-parchment-50">
+      <section className="bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Projects</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             Explore our rocket designs from previous years. Each project represents countless hours
             of dedication, innovation, and teamwork.
           </p>
@@ -37,15 +37,15 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-parchment-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Building the Future</h2>
-          <p className="text-lg text-gray-600 mb-4">
+          <h2 className="text-3xl font-bold mb-6 text-prussian-blue-900">Building the Future</h2>
+          <p className="text-lg text-prussian-blue-700 mb-4">
             Each rocket we design pushes the boundaries of what student engineers can achieve. From
             structural integrity to advanced avionics, every component is carefully crafted by our
             dedicated team members.
           </p>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-prussian-blue-700">
             Want to be part of our next project? Join us and help shape the future of aerospace
             engineering.
           </p>

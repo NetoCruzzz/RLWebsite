@@ -34,11 +34,11 @@ export default function JoinUs() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div className="min-h-screen bg-parchment-50">
+      <section className="bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Join Our Team</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             Become part of a passionate community of student engineers working together to reach new
             heights in aerospace innovation.
           </p>
@@ -47,16 +47,16 @@ export default function JoinUs() {
 
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Why Join Us?</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-prussian-blue-900">Why Join Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
               <Card key={index}>
                 <div className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                    <benefit.icon className="h-8 w-8 text-blue-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                    <benefit.icon className="h-8 w-8 text-primary-500" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{benefit.title}</h3>
-                  <p className="text-gray-600">{benefit.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-prussian-blue-900">{benefit.title}</h3>
+                  <p className="text-prussian-blue-700">{benefit.description}</p>
                 </div>
               </Card>
             ))}
@@ -64,18 +64,18 @@ export default function JoinUs() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-parchment-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Requirements</h2>
+          <h2 className="text-4xl font-bold text-center mb-8 text-prussian-blue-900">Requirements</h2>
           <Card>
             <div className="p-8">
               <ul className="space-y-4">
                 {requirements.map((requirement, index) => (
                   <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-bold mr-4 mt-0.5">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-500 text-white flex items-center justify-center text-sm font-bold mr-4 mt-0.5">
                       {index + 1}
                     </div>
-                    <span className="text-lg text-gray-700">{requirement}</span>
+                    <span className="text-lg text-prussian-blue-700">{requirement}</span>
                   </li>
                 ))}
               </ul>
@@ -86,12 +86,12 @@ export default function JoinUs() {
 
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">How to Get Started</h2>
+          <h2 className="text-4xl font-bold text-center mb-8 text-prussian-blue-900">How to Get Started</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card>
               <div className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-4">1</div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Attend a Meeting</h3>
+                  <div className="text-4xl font-bold text-primary-500 mb-4">1</div>
+                  <h3 className="text-xl font-semibold mb-2 text-prussian-blue-900">Attend a Meeting</h3>
                 <p className="text-gray-600">
                   Join us for one of our weekly team meetings to learn more about ongoing projects
                   and meet the team.
@@ -100,8 +100,8 @@ export default function JoinUs() {
             </Card>
             <Card>
               <div className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-4">2</div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Choose a Subteam</h3>
+                  <div className="text-4xl font-bold text-primary-500 mb-4">2</div>
+                  <h3 className="text-xl font-semibold mb-2 text-prussian-blue-900">Choose a Subteam</h3>
                 <p className="text-gray-600">
                   Explore our subteams and find the one that matches your interests and skills best.
                 </p>
@@ -109,8 +109,8 @@ export default function JoinUs() {
             </Card>
             <Card>
               <div className="p-6 text-center">
-                <div className="text-4xl font-bold text-blue-600 mb-4">3</div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Start Contributing</h3>
+                  <div className="text-4xl font-bold text-primary-500 mb-4">3</div>
+                  <h3 className="text-xl font-semibold mb-2 text-prussian-blue-900">Start Contributing</h3>
                 <p className="text-gray-600">
                   Begin working on projects, attend training sessions, and contribute to our mission.
                 </p>
