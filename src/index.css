@@ -72,6 +72,7 @@
   }
 
   /* Global theme: background + default text color */
+  /* Our Mission HOME PAGE */
   body {
     background-color: var(--color-parchment-50);
     color: var(--color-prussian-blue-900);

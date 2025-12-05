@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <span>rocketclub@university.edu</span>
+                <span>rocketlaunchers.utrgv@gmail.com</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} University Rocket Club. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 2025 The Rocket Launchers. All rights reserved.</p>
         </div>
       </div>
     </footer>

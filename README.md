@@ -30,3 +30,23 @@ Commands:
         git branch -D my-feature-branch
     Delete remotely:
         git push origin --delete my-feature-branch
+
+    Useful tips:
+        Name branches descriptively: feature/login, fix/header-bug, chore/update-deps.
+        Create a PR on GitHub if you want review before merging to main.
+    
+    To discard uncommitted changes (careful — this is destructive):
+        git restore .        # restore tracked files to last commit
+        git clean -fd        # remove untracked files/directories
+
+    To undo committed work on the branch (if not pushed), you can use git reset --hard <commit>.
+
+    To confirm you're on the right branch, run:
+        git branch
+
+    When you're ready to push:
+        git add .
+        git commit -m "Your commit message"
+        git push -u origin NavbarAndHome
+
+
