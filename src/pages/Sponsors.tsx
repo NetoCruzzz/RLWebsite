@@ -35,11 +35,11 @@ export default function Sponsors() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 px-4">
+    <div className="min-h-screen bg-parchment-50">
+      <section className="bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Sponsors</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-primary-100 max-w-3xl mx-auto">
             We are grateful for the support of our sponsors who make our mission possible. Their
             contributions enable us to push the boundaries of student rocketry.
           </p>
@@ -72,14 +72,14 @@ export default function Sponsors() {
                     <Card key={sponsor.id} hover>
                       <div className="p-8 text-center">
                         <div
-                          className={`bg-gray-200 rounded-lg mb-4 flex items-center justify-center ${
+                          className={`bg-parchment-100 rounded-lg mb-4 flex items-center justify-center ${
                             tier === 'platinum' ? 'h-48' : 'h-32'
                           }`}
                         >
-                          <p className="text-gray-500">{sponsor.name} Logo</p>
+                          <p className="text-dusty-grape-500">{sponsor.name} Logo</p>
                         </div>
                         <h3
-                          className={`font-bold mb-4 text-gray-900 ${
+                          className={`font-bold mb-4 text-prussian-blue-900 ${
                             tier === 'platinum' ? 'text-2xl' : 'text-xl'
                           }`}
                         >
@@ -90,7 +90,7 @@ export default function Sponsors() {
                             href={sponsor.website}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+                            className="inline-flex items-center text-primary-500 hover:text-prussian-blue-700 font-semibold"
                           >
                             Visit Website
                             <ExternalLink className="h-4 w-4 ml-2" />
@@ -106,12 +106,12 @@ export default function Sponsors() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-parchment-50">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
             <Heart className="h-8 w-8 text-red-600" />
           </div>
-          <h2 className="text-4xl font-bold mb-6 text-gray-900">Thank You to Our Sponsors</h2>
+          <h2 className="text-4xl font-bold mb-6 text-prussian-blue-900">Thank You to Our Sponsors</h2>
           <p className="text-lg text-gray-600 mb-8">
             Your generous support enables our team to design, build, and launch cutting-edge rockets
             while providing invaluable hands-on experience to student engineers. Together, we're
@@ -120,17 +120,17 @@ export default function Sponsors() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section className="py-16 px-4 bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Become a Sponsor</h2>
           <p className="text-xl mb-8 text-blue-100">
             Partner with us to support student innovation and gain visibility with the next
             generation of engineers. We offer various sponsorship levels to match your goals.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-blue-600 hover:bg-gray-100"
-          >
+            <Button
+              size="lg"
+              className="bg-parchment-50 text-primary-500 hover:bg-parchment-100"
+            >
             Learn About Sponsorship Opportunities
           </Button>
         </div>

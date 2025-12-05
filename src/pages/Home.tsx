@@ -32,12 +32,12 @@ export default function Home({ onNavigate }: HomeProps) {
 
   return (
     <div>
-      <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white py-24 px-4">
+      <section className="relative bg-gradient-to-br from-primary-500 to-prussian-blue-800 text-white py-24 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Engineering the Future of Spaceflight
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-primary-100 max-w-3xl mx-auto">
             Join our team of student engineers as we design, build, and launch high-powered rockets
             to compete at the national level.
           </p>
@@ -57,9 +57,9 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-parchment-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+          <h2 className="text-4xl font-bold text-center mb-12 text-prussian-blue-900">
             Why Join Our Club?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -14,12 +14,12 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-square bg-gray-300 flex items-center justify-center">
-        <p className="text-gray-500">{subteam.name} Image</p>
+      <div className="aspect-square bg-parchment-100 flex items-center justify-center">
+        <p className="text-dusty-grape-500">{subteam.name} Image</p>
       </div>
 
       <div
-        className={`absolute inset-0 bg-blue-600 bg-opacity-95 flex items-center justify-center p-6 transition-opacity duration-300 ${
+        className={`absolute inset-0 bg-primary-500 bg-opacity-95 flex items-center justify-center p-6 transition-opacity duration-300 ${
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
       >
