@@ -21,7 +21,7 @@ export default function Home({ onNavigate }: HomeProps) {
     {
       icon: Trophy,
       title: 'Competition Success',
-      description: 'Compete in national competitions and showcase our innovations against top university teams.',
+      description: 'Compete in national and international competitions, showcasing our innovations against top university teams.',
     },
     {
       icon: Wrench,
@@ -39,7 +39,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-100 max-w-3xl mx-auto">
             Join our team of student engineers as we design, build, and launch high-powered rockets
-            to compete at the national level.
+            to compete at the international level.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" onClick={() => onNavigate('join')}>
@@ -82,23 +82,25 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-gray-900">Our Mission</h2>
+              <h2 className="text-4xl font-bold mb-6 text-gray-900">What is IREC?</h2>
               <p className="text-lg text-gray-600 mb-4">
-                We are dedicated to providing students with hands-on experience in aerospace
-                engineering through the design, construction, and launch of high-powered rockets.
+                The Rocket Launchers are putting the Rio Grande Valley and UTRGV on the map by competing in IREC: The International Rocket Engineering 
+                Competition. This event brings together students, enthusiasts, and major aerospace industry players to watch university rocket clubs 
+                from across the globe launch their high-powered rockets.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Our team competes in prestigious national competitions, pushing the boundaries of
-                what student engineers can achieve while fostering innovation, teamwork, and
-                technical excellence.
+                As a non-profit club at UTRGV, we foster technical excellence, innovation, and teamwork, giving all members the practical skills 
+                needed to succeed in the aerospace industry.
               </p>
               <Button onClick={() => onNavigate('subteams')}>
                 Explore Our Subteams
               </Button>
             </div>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <p className="text-gray-500">Rocket Launch Image Placeholder</p>
-            </div>
+                <img
+                  src="/images/DisparadoTeamPhoto.jpg"
+                  alt="The Rocket Launchers Disparado team photo"
+                  className="w-full h-96 object-cover rounded-lg shadow-xl"
+                />
           </div>
         </div>
       </section>
@@ -113,7 +115,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <Button
             size="lg"
             onClick={() => onNavigate('join')}
-            className="bg-white text-blue-600 hover:bg-gray-100"
+            className="bg-white text-primary-600 hover:bg-gray-100"               //Color of "Get Started Today" text
           >
             Get Started Today
           </Button>

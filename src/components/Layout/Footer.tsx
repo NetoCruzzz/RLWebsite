@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} 2025 The Rocket Launchers. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Rocket Launchers. All rights reserved.</p>
         </div>
       </div>
     </footer>
