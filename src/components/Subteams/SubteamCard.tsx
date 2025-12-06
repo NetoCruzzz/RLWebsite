@@ -14,8 +14,12 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-square bg-parchment-100 flex items-center justify-center">
-        <p className="text-dusty-grape-500">{subteam.name} Image</p>
+      <div className="aspect-square bg-parchment-100 flex items-center justify-center overflow-hidden">
+        <img 
+          src={`/images/${subteam.name}.JPG`} 
+          alt={`${subteam.name} team photo`}
+          className="w-full h-full object-cover"
+        />
       </div>
 
       <div
