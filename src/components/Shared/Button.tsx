@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 interface ButtonProps {
   children: ReactNode;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'whiteToPrimary';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
 }
@@ -18,9 +18,10 @@ export default function Button({
   const baseClasses = 'font-semibold rounded-lg transition-all duration-200';
 
   const variantClasses = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg',
-    secondary: 'bg-gray-600 text-white hover:bg-gray-700 shadow-md hover:shadow-lg',
-    outline: 'border-2 border-blue-600 text-blue-600 hover:bg-blue-50',
+    primary: 'bg-primary-500 text-white hover:bg-primary-600 shadow-md hover:shadow-lg',
+    secondary: 'bg-dusty-grape-600 text-white hover:bg-dusty-grape-700 shadow-md hover:shadow-lg',
+    outline: 'border-2 border-primary-500 text-primary-600 hover:bg-primary-50',
+    whiteToPrimary: 'bg-white text-prussian-blue-600 hover:bg-primary-500 hover:text-white shadow-md hover:shadow-lg',
   };
 
   const sizeClasses = {

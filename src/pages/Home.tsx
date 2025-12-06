@@ -66,8 +66,8 @@ export default function Home({ onNavigate }: HomeProps) {
             {features.map((feature, index) => (
               <Card key={index} hover>
                 <div className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                    <feature.icon className="h-8 w-8 text-blue-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-prussian-blue-100 rounded-full mb-4">
+                    <feature.icon className="h-8 w-8 text-prussian-blue-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
@@ -105,7 +105,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-blue-600 text-white">
+      <section className="py-16 px-4 bg-prussian-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Launch Your Engineering Career?</h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -114,8 +114,8 @@ export default function Home({ onNavigate }: HomeProps) {
           </p>
           <Button
             size="lg"
+            variant="whiteToPrimary"
             onClick={() => onNavigate('join')}
-            className="bg-white text-primary-600 hover:bg-gray-100"               //Color of "Get Started Today" text
           >
             Get Started Today
           </Button>
