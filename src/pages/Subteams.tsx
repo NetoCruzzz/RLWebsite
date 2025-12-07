@@ -28,8 +28,8 @@ export default function Subteams() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-prussian-blue-900">Interested in Joining a Subteam?</h2>
           <p className="text-lg text-prussian-blue-700 mb-8">
-            We welcome students from all engineering backgrounds and experience levels. Whether
-            you're a seasoned engineer or just starting out, there's a place for you on our team.
+            We welcome students from all academic backgrounds and experience levels. Whether you're a seasoned student or just starting out, 
+            there's a place for you on our team.
           </p>
           <p className="text-lg text-prussian-blue-700">
             Contact us to learn more about how you can contribute to our mission and gain hands-on
