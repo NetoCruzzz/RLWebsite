@@ -129,8 +129,9 @@ export default function Sponsors() {
           </p>
             <Button
               size="lg"
-              className="bg-dark-garnet-400 text-primary-500 hover:bg-dark-garnet-600"
-            >
+              className="!bg-dark-garnet-400 text-primary-500 hover:!bg-dark-garnet-600"    // The default button color is blue so whenever you need to change something in specific
+                                                                                            // component, use the ! to override it
+            >                                                                              
             Learn About Sponsorship Opportunities
           </Button>
         </div>
