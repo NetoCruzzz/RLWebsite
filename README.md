@@ -5,7 +5,10 @@ Commands:
         git fetch origin
         git checkout main
         git pull origin main
-        git checkout -b my-feature-branch
+
+    Create a Branch:
+        git checkout -b BRANCHNAME
+
     or using newer syntax:
         git fetch origin
         git switch main

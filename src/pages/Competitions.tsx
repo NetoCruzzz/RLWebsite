@@ -4,13 +4,13 @@ import { competitionsData } from '../data/competitions';
 
 export default function Competitions() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-parchment-50"> {/* Light parchment backgroung */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Competitions</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             We compete at the highest level of collegiate rocketry, testing our skills and
-            innovations against the best teams in the nation.
+            innovations against the best teams in the world.
           </p>
         </div>
       </section>
@@ -20,8 +20,12 @@ export default function Competitions() {
           {competitionsData.map((competition) => (
             <Card key={competition.id}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="bg-gray-300 aspect-video lg:aspect-auto flex items-center justify-center">
-                  <p className="text-gray-500">{competition.name} Image</p>
+                <div className="aspect-video lg:aspect-auto overflow-hidden rounded-lg">
+                  <img
+                    src={competition.image} // Source comes from competitions.ts data
+                    alt={competition.name + " Competition Image"}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6 lg:p-8">
                   <h2 className="text-3xl font-bold mb-4 text-gray-900">{competition.name}</h2>
@@ -71,7 +75,7 @@ export default function Competitions() {
           </p>
           <p className="text-lg text-gray-600">
             Each competition season brings new challenges and opportunities for our team to grow and
-            demonstrate our capabilities on a national stage.
+            demonstrate our capabilities on an international stage.
           </p>
         </div>
       </section>

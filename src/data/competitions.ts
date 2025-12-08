@@ -3,11 +3,11 @@ import { Competition } from '../types';
 export const competitionsData: Competition[] = [
   {
     id: '1',
-    name: 'Spaceport America Cup',
-    description: 'The world\'s largest intercollegiate rocket engineering competition, bringing together teams from around the globe to launch high-powered rockets in the New Mexico desert.',
-    date: 'June 2024',
-    location: 'Las Cruces, New Mexico',
-    image: '/images/spaceport.jpg',
+    name: 'International Rocket Engineering Competition (IREC)',
+    description: 'The world\'s largest intercollegiate rocket engineering competition, bringing together teams from around the globe to launch high-powered rockets in locations such as Utah, New Mexico, and Texas.',
+    date: 'May 2025',
+    location: 'Spaceport Midland, Texas',
+    image: '/images/competitionIREC.jpg',
     achievements: [
       '2023: 1st Place - 10K COTS Category',
       '2022: Technical Excellence Award',
@@ -16,11 +16,11 @@ export const competitionsData: Competition[] = [
   },
   {
     id: '2',
-    name: 'NASA Student Launch',
-    description: 'A premier NASA competition challenging students to design, build, and launch a reusable rocket with a complex payload to one mile altitude. Teams must complete rigorous design reviews and meet strict safety requirements.',
+    name: 'Texas Lone Star Cup',
+    description: 'The Lone Star Cup is a premier rocketry competition for Texas-based teams, providing a crucial opportunity for test flights ahead of IREC. Teams compete across three altitude categories: 5,000 ft, 10,000 ft, and 30,000 ft. Performance is judged using Barrowman scoring to recognize the most stable and accurate flights. The event concludes with a Texas-style barbecue for networking among sponsors, participants, and spectators.',
     date: 'April 2024',
-    location: 'Huntsville, Alabama',
-    image: '/images/nasa-launch.jpg',
+    location: 'Seymour, Texas',
+    image: '/images/lonestarcup.jpg',
     achievements: [
       '2023: Top 10 Finish',
       '2022: Payload Innovation Award',
