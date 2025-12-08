@@ -21,8 +21,8 @@ export const rocketsData: Rocket[] = [
       'Completed all payload objectives',
     ],
     images: [
-        '/images/Project Rockets Images/Additional Pictures/phoenix1-1.jpg', 
-        '/images/Project Rockets Images/Additional Pictures/phoenix1-2.jpg'
+        '/images/Project Rockets Images/Additional Pictures/additionaldisparado1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/additionaldisparado2.jpg'
     ],
   },
   {
@@ -31,7 +31,7 @@ export const rocketsData: Rocket[] = [
     year: '2024',
     thumbnail: '/images/Project Thumbnail Images/invictusteamphoto.jpg',
     description: 'An improved design featuring carbon fiber construction and advanced avionics for precise altitude control.',
-    mainImage: '/images/Project Rockets Images/Main Pictures/invictus.jpg',
+    mainImage: '/images/Project Rockets Images/Main Pictures/maininvictus.jpg',
     specifications: {
       height: '9.5 feet',
       diameter: '6 inches',
@@ -45,8 +45,8 @@ export const rocketsData: Rocket[] = [
       'Real-time telemetry transmission throughout flight',
     ],
     images: [
-        '/images/Project Rockets Images/Additional Pictures/phoenix2-1.jpg', 
-        '/images/Project Rockets Images/Additional Pictures/phoenix2-2.jpg'
+        '/images/Project Rockets Images/Additional Pictures/additionalinvictus1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/additionalinvictus2.jpg'
     ],
   },
   {
@@ -55,7 +55,7 @@ export const rocketsData: Rocket[] = [
     year: '2023',
     thumbnail: '/images/Project Thumbnail Images/cuhboomteamphoto.jpg',
     description: 'Our most advanced rocket to date, featuring a custom hybrid propulsion system and AI-powered flight control.',
-    mainImage: '/images/Project Rockets Images/Main Pictures/cuhboom.jpg',
+    mainImage: '/images/Project Rockets Images/Main Pictures/maincuhboom.jpg',
     specifications: {
       height: '11 feet',
       diameter: '6.5 inches',
@@ -69,8 +69,8 @@ export const rocketsData: Rocket[] = [
       'Integration of machine learning for flight optimization',
     ],
     images: [
-        '/images/Project Rockets Images/Additional Pictures/phoenix3-1.jpg', 
-        '/images/Project Rockets Images/Additional Pictures/phoenix3-2.jpg'
+        '/images/Project Rockets Images/Additional Pictures/additionalcuhboom1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/additionalcuhboom2.jpg'
     ],
   },
 ];
