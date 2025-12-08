@@ -15,9 +15,13 @@ export default function RocketGallery({ rockets, onSelectRocket }: RocketGallery
             className="cursor-pointer"
             onClick={() => onSelectRocket(rocket)}
           >
-            <div className="aspect-[4/3] bg-gray-300 flex items-center justify-center">
-              <p className="text-gray-500">{rocket.name} Image</p>
-            </div>
+            <div className="aspect-[4/3] overflow-hidden">
+              <img 
+                    src={rocket.thumbnail} 
+                    alt={rocket.name + " Thumbnail"}
+                    className="w-full h-full object-cover"
+                />
+            </div>
             <div className="p-6">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-2xl font-bold text-gray-900">{rocket.name}</h3>

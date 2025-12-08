@@ -97,8 +97,8 @@ export default function Home({ onNavigate }: HomeProps) {
               </Button>
             </div>
                 <img
-                  src="/images/DisparadoTeamPhoto.jpg"
-                  alt="The Rocket Launchers Disparado team photo"
+                  src="/images/IREC2025.jpg"
+                  alt="The Rocket Launchers What is IREC Image"
                   className="w-full h-96 object-cover rounded-lg shadow-xl"
                 />
           </div>

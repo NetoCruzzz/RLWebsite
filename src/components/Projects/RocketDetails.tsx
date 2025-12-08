@@ -34,9 +34,17 @@ export default function RocketDetails({ rocket, onBack }: RocketDetailsProps) {
       <section className="py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gray-300 rounded-lg aspect-[4/3] flex items-center justify-center">
-              <p className="text-gray-500">Main Rocket Image</p>
-            </div>
+            <div className="bg-gray-200 rounded-lg aspect-[4/3] flex items-center justify-center overflow-hidden">
+                {rocket.mainImage ? ( 
+                  <img
+                    src={rocket.mainImage}
+                    alt={rocket.name + ' Main Image'}
+                    className="w-full h-full object-cover"
+                   />
+                 ) : ( 
+                   <p className="text-gray-500">Main Rocket Image Not Available</p>
+                 )}
+             </div>
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Specifications</h2>
               <div className="bg-white rounded-lg shadow-md p-6 space-y-4">

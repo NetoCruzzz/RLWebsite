@@ -3,12 +3,13 @@ import { Rocket } from '../types';
 export const rocketsData: Rocket[] = [
   {
     id: '1',
-    name: 'Phoenix I',
-    year: '2022',
-    thumbnail: '/images/phoenix1-thumb.jpg',
+    name: 'Disparado',
+    year: '2025',
+    thumbnail: '/images/disparadoteamphoto.jpg',
     description: 'Our first competitive rocket, designed to reach an altitude of 10,000 feet with a custom payload.',
+    mainImage: '/images/maindisparado.jpg',
     specifications: {
-      height: '8 feet',
+      height: '9 feet',
       diameter: '6 inches',
       weight: '25 lbs',
       apogee: '10,243 feet',
@@ -23,9 +24,9 @@ export const rocketsData: Rocket[] = [
   },
   {
     id: '2',
-    name: 'Phoenix II',
-    year: '2023',
-    thumbnail: '/images/phoenix2-thumb.jpg',
+    name: 'Invictus',
+    year: '2024',
+    thumbnail: '/images/invictusteamphoto.jpg',
     description: 'An improved design featuring carbon fiber construction and advanced avionics for precise altitude control.',
     specifications: {
       height: '9.5 feet',
@@ -43,9 +44,9 @@ export const rocketsData: Rocket[] = [
   },
   {
     id: '3',
-    name: 'Phoenix III',
-    year: '2024',
-    thumbnail: '/images/phoenix3-thumb.jpg',
+    name: 'Cuhboom',
+    year: '2023',
+    thumbnail: '/images/cuhboomteamphoto.jpg',
     description: 'Our most advanced rocket to date, featuring a custom hybrid propulsion system and AI-powered flight control.',
     specifications: {
       height: '11 feet',
