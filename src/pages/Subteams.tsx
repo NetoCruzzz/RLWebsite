@@ -4,7 +4,7 @@ import { subteamsData } from '../data/subteams';
 export default function Subteams() {
   return (
     <div className="min-h-screen bg-parchment-50">
-      <section className="bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Subteams</h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">

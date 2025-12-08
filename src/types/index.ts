@@ -29,6 +29,7 @@ export interface Competition {
   date: string;
   location: string;
   image: string;
+  url: string;
   achievements?: string[];
 }
 

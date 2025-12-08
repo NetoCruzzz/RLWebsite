@@ -36,7 +36,7 @@ export default function Sponsors() {
 
   return (
     <div className="min-h-screen bg-parchment-50">
-      <section className="bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white py-16 px-4">
+      <section className="bg-gradient-to-r from-dark-garnet-500 to-dark-garnet-800 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Sponsors</h1>
           <p className="text-xl text-primary-100 max-w-3xl mx-auto">
@@ -120,7 +120,7 @@ export default function Sponsors() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-r from-primary-500 to-prussian-blue-700 text-white">
+      <section className="py-16 px-4 bg-gradient-to-r from-dark-garnet-500 to-dark-garnet-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Become a Sponsor</h2>
           <p className="text-xl mb-8 text-blue-100">
@@ -129,7 +129,7 @@ export default function Sponsors() {
           </p>
             <Button
               size="lg"
-              className="bg-parchment-50 text-primary-500 hover:bg-parchment-100"
+              className="bg-dark-garnet-400 text-primary-500 hover:bg-dark-garnet-600"
             >
             Learn About Sponsorship Opportunities
           </Button>

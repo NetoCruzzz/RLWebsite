@@ -5,7 +5,7 @@ import { competitionsData } from '../data/competitions';
 export default function Competitions() {
   return (
     <div className="min-h-screen bg-parchment-50"> {/* Light parchment backgroung */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16 px-4">
+      <section className="bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Our Competitions</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -20,13 +20,20 @@ export default function Competitions() {
           {competitionsData.map((competition) => (
             <Card key={competition.id}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="aspect-video lg:aspect-auto overflow-hidden rounded-lg">
+                <a  // LINK When Clicking Image: <a></a>
+                  href={competition.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="hover:opacity-90 transition-opacity" // Added a subtle hover effect
+                >
+                <div className="w-full h-full overflow-hidden rounded-lg">
                   <img
                     src={competition.image} // Source comes from competitions.ts data
                     alt={competition.name + " Competition Image"}
                     className="w-full h-full object-cover"
                   />
                 </div>
+                </a>
                 <div className="p-6 lg:p-8">
                   <h2 className="text-3xl font-bold mb-4 text-gray-900">{competition.name}</h2>
                   <p className="text-lg text-gray-600 mb-6">{competition.description}</p>
@@ -65,15 +72,15 @@ export default function Competitions() {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Competing at the Highest Level</h2>
-          <p className="text-lg text-gray-600 mb-4">
+          <h2 className="text-3xl font-bold mb-6 text-white">Competing at the Highest Level</h2>
+          <p className="text-lg text-white mb-4">
             These competitions provide our team with invaluable experience in project management,
             technical problem-solving, and teamwork. They challenge us to innovate and push the
             boundaries of what's possible in student rocketry.
           </p>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-white">
             Each competition season brings new challenges and opportunities for our team to grow and
             demonstrate our capabilities on an international stage.
           </p>

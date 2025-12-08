@@ -8,6 +8,7 @@ export const competitionsData: Competition[] = [
     date: 'May 2025',
     location: 'Spaceport Midland, Texas',
     image: '/images/competitionIREC.jpg',
+    url: 'https://www.esrarocket.org/',
     achievements: [
       '2023: 1st Place - 10K COTS Category',
       '2022: Technical Excellence Award',
@@ -21,6 +22,7 @@ export const competitionsData: Competition[] = [
     date: 'April 2024',
     location: 'Seymour, Texas',
     image: '/images/lonestarcup.jpg',
+    url: 'https://texaslonestarcup.org/index.html#',
     achievements: [
       '2023: Top 10 Finish',
       '2022: Payload Innovation Award',

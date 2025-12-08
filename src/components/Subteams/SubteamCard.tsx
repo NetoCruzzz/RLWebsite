@@ -23,8 +23,8 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
       </div>
 
       <div
-        className={`absolute inset-0 bg-primary-500 bg-opacity-95 flex items-center justify-center p-6 transition-opacity duration-300 ${
-          isHovered ? 'opacity-100' : 'opacity-0'
+        className={`absolute inset-0 bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800 bg-opacity-95 flex items-center justify-center p-6 transition-opacity duration-300 ${
+          isHovered ? 'opacity-90' : 'opacity-0'
         }`}
       >
         <div className="text-white text-center">
