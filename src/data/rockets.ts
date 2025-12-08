@@ -5,9 +5,9 @@ export const rocketsData: Rocket[] = [
     id: '1',
     name: 'Disparado',
     year: '2025',
-    thumbnail: '/images/disparadoteamphoto.jpg',
+    thumbnail: '/images/Project Thumbnail Images/disparadoteamphoto.jpg',
     description: 'Our first competitive rocket, designed to reach an altitude of 10,000 feet with a custom payload.',
-    mainImage: '/images/maindisparado.jpg',
+    mainImage: '/images/Project Rockets Images/Main Pictures/maindisparado.jpg',
     specifications: {
       height: '9 feet',
       diameter: '6 inches',
@@ -20,14 +20,18 @@ export const rocketsData: Rocket[] = [
       'Achieved target altitude within 2% accuracy',
       'Completed all payload objectives',
     ],
-    images: ['/images/phoenix1-1.jpg', '/images/phoenix1-2.jpg'],
+    images: [
+        '/images/Project Rockets Images/Additional Pictures/phoenix1-1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/phoenix1-2.jpg'
+    ],
   },
   {
     id: '2',
     name: 'Invictus',
     year: '2024',
-    thumbnail: '/images/invictusteamphoto.jpg',
+    thumbnail: '/images/Project Thumbnail Images/invictusteamphoto.jpg',
     description: 'An improved design featuring carbon fiber construction and advanced avionics for precise altitude control.',
+    mainImage: '/images/Project Rockets Images/Main Pictures/invictus.jpg',
     specifications: {
       height: '9.5 feet',
       diameter: '6 inches',
@@ -40,14 +44,18 @@ export const rocketsData: Rocket[] = [
       'Successful deployment of dual-deployment recovery system',
       'Real-time telemetry transmission throughout flight',
     ],
-    images: ['/images/phoenix2-1.jpg', '/images/phoenix2-2.jpg'],
+    images: [
+        '/images/Project Rockets Images/Additional Pictures/phoenix2-1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/phoenix2-2.jpg'
+    ],
   },
   {
     id: '3',
     name: 'Cuhboom',
     year: '2023',
-    thumbnail: '/images/cuhboomteamphoto.jpg',
+    thumbnail: '/images/Project Thumbnail Images/cuhboomteamphoto.jpg',
     description: 'Our most advanced rocket to date, featuring a custom hybrid propulsion system and AI-powered flight control.',
+    mainImage: '/images/Project Rockets Images/Main Pictures/cuhboom.jpg',
     specifications: {
       height: '11 feet',
       diameter: '6.5 inches',
@@ -60,6 +68,9 @@ export const rocketsData: Rocket[] = [
       'Successful test of hybrid propulsion system',
       'Integration of machine learning for flight optimization',
     ],
-    images: ['/images/phoenix3-1.jpg', '/images/phoenix3-2.jpg'],
+    images: [
+        '/images/Project Rockets Images/Additional Pictures/phoenix3-1.jpg', 
+        '/images/Project Rockets Images/Additional Pictures/phoenix3-2.jpg'
+    ],
   },
 ];

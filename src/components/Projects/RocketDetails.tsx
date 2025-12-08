@@ -82,9 +82,17 @@ export default function RocketDetails({ rocket, onBack }: RocketDetailsProps) {
               {rocket.images.map((image, index) => (
                 <div
                   key={index}
-                  className="bg-gray-300 rounded-lg aspect-video flex items-center justify-center"
-                >
-                  <p className="text-gray-500">Image {index + 1}</p>
+                   className="bg-gray-200 rounded-lg aspect-video flex items-center justify-center overflow-hidden" 
+              >
+                  {image ? (
+                    <img
+                      src={image}
+                      alt={`Additional Image ${index + 1} for ${rocket.name}`}
+                      className="w-full h-full object-cover"
+                   />
+                 ) : (
+                    <p className="text-gray-500">Image {index + 1} Not Available</p>
+                 )}
                 </div>
               ))}
             </div>

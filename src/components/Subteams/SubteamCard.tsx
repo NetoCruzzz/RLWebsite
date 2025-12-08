@@ -16,7 +16,7 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
     >
       <div className="aspect-square bg-parchment-100 flex items-center justify-center overflow-hidden">
         <img 
-          src={`/images/${subteam.name}.JPG`} 
+          src={`/images/Subteams Images/${subteam.name}.JPG`} 
           alt={`${subteam.name} team photo`}
           className="w-full h-full object-cover"
         />

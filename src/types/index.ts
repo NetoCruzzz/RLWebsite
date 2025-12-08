@@ -11,6 +11,7 @@ export interface Rocket {
   year: string;
   thumbnail: string;
   description: string;
+  mainImage?: string;
   specifications: {
     height?: string;
     diameter?: string;
