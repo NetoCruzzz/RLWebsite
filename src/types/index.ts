@@ -16,6 +16,7 @@ export interface Rocket {
     height?: string;
     diameter?: string;
     weight?: string;
+    maxSpeed?: string;
     apogee?: string;
     motor?: string;
   };
