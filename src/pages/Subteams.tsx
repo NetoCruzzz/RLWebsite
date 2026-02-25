@@ -1,7 +1,11 @@
 import SubteamCard from '../components/Subteams/SubteamCard';
 import { subteamsData } from '../data/subteams';
 
-export default function Subteams() {
+interface SubteamsProps {
+  onNavigate: (page: string) => void;
+}
+
+export default function Subteams({ onNavigate }: SubteamsProps) {
   return (
     <div className="min-h-screen bg-parchment-50">
       <section className="bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800 text-white py-16 px-4">
@@ -18,7 +22,7 @@ export default function Subteams() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {subteamsData.map((subteam) => (
-              <SubteamCard key={subteam.id} subteam={subteam} />
+              <SubteamCard key={subteam.id} subteam={subteam} onNavigate={onNavigate} />
             ))}
           </div>
         </div>

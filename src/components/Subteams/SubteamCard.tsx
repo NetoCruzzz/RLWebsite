@@ -3,20 +3,23 @@ import { Subteam } from '../../types';
 
 interface SubteamCardProps {
   subteam: Subteam;
+  onNavigate: (page: string) => void;
 }
 
-export default function SubteamCard({ subteam }: SubteamCardProps) {
+export default function SubteamCard({ subteam, onNavigate }: SubteamCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
+    <button
+      type="button"
       className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={() => onNavigate(subteam.pageId)}
     >
       <div className="aspect-square bg-parchment-100 flex items-center justify-center overflow-hidden">
         <img 
-          src={`/images/${subteam.name}.JPG`} 
+          src={subteam.image}
           alt={`${subteam.name} team photo`}
           className="w-full h-full object-cover"
         />
@@ -36,6 +39,6 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
         <h3 className="text-white text-xl font-semibold">{subteam.name}</h3>
       </div>
-    </div>
+    </button>
   );
 }

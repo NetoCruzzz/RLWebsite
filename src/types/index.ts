@@ -1,8 +1,29 @@
+export interface SubteamProject {
+  id: string;
+  title: string;
+  lead: string;
+  coLead: string;
+  members: string[];
+  date: string;
+  technicalReport: string;
+  image: string;
+}
+
 export interface Subteam {
   id: string;
+  pageId: string;
   name: string;
   description: string;
   image: string;
+}
+
+export interface SubteamDetailsData {
+  name: string;
+  description: string;
+  meetingTimes: string[];
+  lead: string;
+  coLead: string;
+  projects: SubteamProject[];
 }
 
 export interface Rocket {
