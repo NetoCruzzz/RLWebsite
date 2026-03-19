@@ -10,11 +10,13 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
 
   return (
     <div
-      className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-300 hover:scale-105"
+      // REMOVED: border-2 border-transparent hover:border-dark-garnet-500
+      className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-all duration-300 hover:scale-105"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="aspect-square bg-parchment-100 flex items-center justify-center overflow-hidden">
+      {/* Image Container */}
+      <div className="aspect-square bg-parchment-100 dark:bg-slate-900 flex items-center justify-center overflow-hidden transition-colors duration-300">
         <img 
           src={`/images/Subteams Images/${subteam.name}.JPG`} 
           alt={`${subteam.name} team photo`}
@@ -22,20 +24,24 @@ export default function SubteamCard({ subteam }: SubteamCardProps) {
         />
       </div>
 
+      {/* Red Branding Hover Overlay */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br from-dark-garnet-500 to-dark-garnet-800 bg-opacity-95 flex items-center justify-center p-6 transition-opacity duration-300 ${
-          isHovered ? 'opacity-90' : 'opacity-0'
+        className={`absolute inset-0 bg-gradient-to-br from-[#c50a07] to-[#310302] flex items-center justify-center p-6 transition-opacity duration-300 ${
+          isHovered ? 'opacity-95' : 'opacity-0'
         }`}
       >
         <div className="text-white text-center">
           <h3 className="text-2xl font-bold mb-4">{subteam.name}</h3>
-          <p className="text-lg">{subteam.description}</p>
+          <p className="text-lg leading-relaxed">{subteam.description}</p>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
-        <h3 className="text-white text-xl font-semibold">{subteam.name}</h3>
+      {/* Default Label */}
+      <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 transition-opacity duration-300 ${
+        isHovered ? 'opacity-0' : 'opacity-100'
+      }`}>
+        <h3 className="text-white text-xl font-semibold shadow-sm">{subteam.name}</h3>
       </div>
     </div>
   );
-}
+} 

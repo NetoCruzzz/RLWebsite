@@ -2,106 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Design system variables (provided palette) */
+/* 1. INITIAL PALETTE DATA */
 :root {
-	--color-prussian-blue-50: #e9f2fc;
-	--color-prussian-blue-100: #d2e5f9;
-	--color-prussian-blue-200: #a5ccf3;
-	--color-prussian-blue-300: #78b2ed;
-	--color-prussian-blue-400: #4b99e7;
-	--color-prussian-blue-500: #1f7fe0;
-	--color-prussian-blue-600: #1866b4;
-	--color-prussian-blue-700: #124c87;
-	--color-prussian-blue-800: #0c335a;
-	--color-prussian-blue-900: #06192d;
-	--color-prussian-blue-950: #04121f;
+    --color-prussian-blue-50: #e9f2fc;
+    --color-prussian-blue-100: #d2e5f9;
+    --color-prussian-blue-200: #a5ccf3;
+    --color-prussian-blue-300: #78b2ed;
+    --color-prussian-blue-400: #4b99e7;
+    --color-prussian-blue-500: #1f7fe0;
+    --color-prussian-blue-600: #1866b4;
+    --color-prussian-blue-700: #124c87;
+    --color-prussian-blue-800: #0c335a;
+    --color-prussian-blue-900: #06192d;
+    --color-prussian-blue-950: #04121f;
 
-	--color-space-indigo-50: #efeff6;
-	--color-space-indigo-100: #dfdfec;
-	--color-space-indigo-200: #bebeda;
-	--color-space-indigo-300: #9e9ec7;
-	--color-space-indigo-400: #7d7db5;
-	--color-space-indigo-500: #5d5da2;
-	--color-space-indigo-600: #4a4a82;
-	--color-space-indigo-700: #383861;
-	--color-space-indigo-800: #252541;
-	--color-space-indigo-900: #131320;
-	--color-space-indigo-950: #0d0d17;
+    --color-space-indigo-50: #efeff6;
+    --color-space-indigo-100: #dfdfec;
+    --color-space-indigo-200: #bebeda;
+    --color-space-indigo-300: #9e9ec7;
+    --color-space-indigo-400: #7d7db5;
+    --color-space-indigo-500: #5d5da2;
+    --color-space-indigo-600: #4a4a82;
+    --color-space-indigo-700: #383861;
+    --color-space-indigo-800: #252541;
+    --color-space-indigo-900: #131320;
+    --color-space-indigo-950: #0d0d17;
 
-	--color-dusty-grape-50: #f0f1f4;
-	--color-dusty-grape-100: #e1e2ea;
-	--color-dusty-grape-200: #c3c6d5;
-	--color-dusty-grape-300: #a5a9c0;
-	--color-dusty-grape-400: #888caa;
-	--color-dusty-grape-500: #6a7095;
-	--color-dusty-grape-600: #555977;
-	--color-dusty-grape-700: #3f435a;
-	--color-dusty-grape-800: #2a2d3c;
-	--color-dusty-grape-900: #15161e;
-	--color-dusty-grape-950: #0f1015;
-
-	--color-parchment-50: #f7f1ee;
-	--color-parchment-100: #eee3dd;
-	--color-parchment-200: #dec7ba;
-	--color-parchment-300: #cdaa98;
-	--color-parchment-400: #bd8e75;
-	--color-parchment-500: #ac7253;
-	--color-parchment-600: #8a5b42;
-	--color-parchment-700: #674432;
-	--color-parchment-800: #452e21;
-	--color-parchment-900: #221711;
-	--color-parchment-950: #18100c;
-
-	--color-dark-garnet-50: #fee7e6;
-	--color-dark-garnet-100: #fdcfce;
-	--color-dark-garnet-200: #fb9e9d;
-	--color-dark-garnet-300: #fa6e6b;
-	--color-dark-garnet-400: #f83d3a;
-	--color-dark-garnet-500: #f60d09;
-	--color-dark-garnet-600: #c50a07;
-	--color-dark-garnet-700: #940805;
-	--color-dark-garnet-800: #620504;
-	--color-dark-garnet-900: #310302;
-	--color-dark-garnet-950: #220201;
+    --color-parchment-50: #f7f1ee;
+    /* ... (rest of your existing palette) */
 }
 
+/* 2. THEME LOGIC: SEMANTIC TOKENS */
+:root {
+    /* Light Mode Values */
+    --bg-main: var(--color-parchment-50);
+    --text-main: var(--color-prussian-blue-900);
+    --color-primary-500: var(--color-prussian-blue-500);
+}
+
+.dark {
+	/* Dark Mode - Soft Deep Navy (Not Pure Black) */
+  --bg-main: #0a111a; 
+  --text-main: #d1d5db; /* Muted gray-white */
+  --color-primary-500: #60a5fa; /* Softer Blue */
+}
+
+/* 3. BASE STYLES */
 @layer base {
-  /* Make sure the page fills the viewport */
   html, body, #root {
     height: 100%;
   }
 
-  /* Global theme: background + default text color */
-  /* Our Mission HOME PAGE */
-  body {
-    background-color: var(--color-parchment-50);
-    color: var(--color-prussian-blue-900);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+	body {
+		background-color: var(--bg-main);
+		color: var(--text-main);
+		transition: background-color 0.4s ease, color 0.4s ease;
+	}
 
-  /* Links and interactive elements default to primary color */
   a {
     color: var(--color-primary-500);
   }
 
-  /* Example utility class for primary buttons using variables */
   .btn-primary {
     background-color: var(--color-primary-500);
     color: white;
   }
 }
 
-/* Convenience semantic tokens */
+/* 4. CONVENIENCE SEMANTIC TOKENS (KEEPING YOUR EXISTING ONES) */
 :root {
-	--color-primary-50: var(--color-prussian-blue-50);
-	--color-primary-100: var(--color-prussian-blue-100);
-	--color-primary-200: var(--color-prussian-blue-200);
-	--color-primary-300: var(--color-prussian-blue-300);
-	--color-primary-400: var(--color-prussian-blue-400);
-	--color-primary-500: var(--color-prussian-blue-500);
-	--color-primary-600: var(--color-prussian-blue-600);
-	--color-primary-700: var(--color-prussian-blue-700);
-	--color-primary-800: var(--color-prussian-blue-800);
-	--color-primary-900: var(--color-prussian-blue-900);
+    --color-primary-50: var(--color-prussian-blue-50);
+    --color-primary-100: var(--color-prussian-blue-100);
+    --color-primary-200: var(--color-prussian-blue-200);
+    --color-primary-300: var(--color-prussian-blue-300);
+    --color-primary-400: var(--color-prussian-blue-400);
+    /* Note: primary-500 is handled above in the theme logic block */
+    --color-primary-600: var(--color-prussian-blue-600);
+    --color-primary-700: var(--color-prussian-blue-700);
+    --color-primary-800: var(--color-prussian-blue-800);
+    --color-primary-900: var(--color-prussian-blue-900);
 }
